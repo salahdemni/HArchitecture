@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="622.0" prefWidth="580.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hstl.Master">
+   <children>
+   	<!-- TODO Add Nodes -->
+   	<Pane layoutX="-1.0" prefHeight="36.0" prefWidth="542.0" style="-fx-background-color: #0099FF;">
+                        <children>
+                           <Label blendMode="HARD_LIGHT" layoutX="104.0" layoutY="9.0" prefHeight="17.0" prefWidth="360.0" text="Ajouter l'Adresse IP du nouvelle Machine Virtuelle" textAlignment="CENTER" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </Pane>
+      <TextField fx:id="IPtf" focusTraversable="false" layoutX="158.0" layoutY="69.0" prefHeight="36.0" prefWidth="253.0" promptText="Address IP">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="AJButton" layoutX="168.0" layoutY="131.0" mnemonicParsing="false" onAction="#action" prefHeight="36.0" prefWidth="100.0" text="          Ajout" textAlignment="RIGHT">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView disable="true" fitHeight="26.0" fitWidth="26.0" layoutX="176.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/demni/Desktop/Int_Exp/add.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="an" cancelButton="true" layoutX="299.0" layoutY="130.0" mnemonicParsing="false" onAction="#cancel" prefHeight="36.0" prefWidth="106.0" text="         Annuler">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView disable="true" fitHeight="26.0" fitWidth="27.0" layoutX="309.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/demni/Desktop/Int_Exp/close_box_red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="masterimg" fitHeight="108.0" fitWidth="132.0" layoutX="236.0" layoutY="303.0" onMousePressed="#actionMaster" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../home/salah/Desktop/java/Computer_Icon.png" />
+         </image>
+         <effect>
+            <DropShadow height="30.11" radius="12.2775" spread="0.39" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="imgclient" fitHeight="64.0" fitWidth="75.0" layoutX="28.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/6ip56855T.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgcnx" fitHeight="150.0" fitWidth="146.0" layoutX="88.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/line7.gif" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Pane fx:id="VMPan2" layoutX="326.0" layoutY="160.0" visible="false">
+         <children>
+            <ImageView fx:id="img2" fitHeight="7.0" fitWidth="177.0" layoutY="109.99665832519531" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+               <image>
+                  <Image url="@../../images/lin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="58.0" layoutX="139.0" layoutY="42.0" onMousePressed="#actionSlave2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/server1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b2" layoutX="103.0" layoutY="111.0" mnemonicParsing="false" onAction="#actionVM2" text="255.255.255.255" />
+         </children>
+      </Pane>
+      <Pane fx:id="VMPan1" layoutX="338.0" layoutY="314.0" visible="false">
+         <children>
+            <ImageView fx:id="img1" fitHeight="7.0" fitWidth="177.0" layoutX="3.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/lin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="58.0" layoutX="132.0" layoutY="9.0" pickOnBounds="true" onMousePressed="#actionSlave1" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/server1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b1" layoutX="95.0" layoutY="78.0" mnemonicParsing="false" onAction="#actionVM1" text="255.255.255.255" />
+         </children>
+      </Pane>
+      <Pane fx:id="VMPan3" layoutX="309.0" layoutY="424.0" visible="false">
+         <children>
+            <ImageView fx:id="img3" fitHeight="7.0" fitWidth="177.0" layoutX="11.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" rotate="37.9">
+               <image>
+                  <Image url="@../../images/lin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="58.0" layoutX="132.0" layoutY="9.0" onMousePressed="#actionSlave3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/server1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b3" layoutX="96.0" layoutY="77.0" mnemonicParsing="false" onAction="#actionVM3" text="255.255.255.255" />
+         </children>
+      </Pane>
+      <Pane fx:id="VMPan4" layoutX="89.0" layoutY="155.0" />
+      <Pane fx:id="VMPan4" layoutX="238.0" layoutY="402.0" visible="false">
+         <children>
+            <ImageView fx:id="img4" fitHeight="7.0" fitWidth="161.0" layoutX="-43.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../images/lin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="58.0" layoutX="14.0" layoutY="111.32046508789062" onMousePressed="#actionSlave4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/server1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b4" layoutX="-23.0" layoutY="178.0" mnemonicParsing="false" onAction="#actionVM4" text="255.255.255.255" />
+         </children>
+      </Pane>
+                     <ImageView blendMode="HARD_LIGHT" fitHeight="36.0" fitWidth="39.0" layoutX="540.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../../Users/demni/Desktop/Int_Exp/téléchargement%20(1).jpg" />
+                        </image>
+                     </ImageView>
+      <Pane layoutX="231.0" layoutY="175.0" />
+      <Separator layoutY="181.0" prefHeight="17.0" prefWidth="580.0">
+         <effect>
+            <DropShadow color="#0b5da4" />
+         </effect>
+      </Separator>
+      <Pane fx:id="VMPan5" layoutX="137.0" layoutY="79.0" visible="false">
+         <children>
+            <ImageView fx:id="img5" fitHeight="7.0" fitWidth="161.0" layoutY="187.0" pickOnBounds="true" onMousePressed="#actionSlave5" preserveRatio="true" rotate="41.2">
+               <image>
+                  <Image url="@../../images/lin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="58.0" layoutX="18.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/server1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b5" layoutX="-22.0" layoutY="183.0" mnemonicParsing="false" onAction="#actionVM5" text="255.255.255.255" />
+         </children>
+      </Pane>
+      <Pane fx:id="VMPan6" layoutX="83.0" layoutY="367.0" visible="false">
+         <children>
+            <ImageView fx:id="img6" fitHeight="7.0" fitWidth="161.0" layoutX="29.0" layoutY="74.0" onMousePressed="#actionSlave6" pickOnBounds="true" preserveRatio="true" rotate="-35.5">
+               <image>
+                  <Image url="@../../images/lin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="58.0" layoutX="25.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/server1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b6" layoutX="-20.0" layoutY="159.0" mnemonicParsing="false" onAction="#actionVM6" text="255.255.255.255" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

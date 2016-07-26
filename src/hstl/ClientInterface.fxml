@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="371.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hstl.Client">
+   <children>
+      <Accordion prefHeight="371.0" prefWidth="564.0" style="-fx-background-color: #000000;">
+        <panes>
+          <TitledPane fx:id="S1" graphicTextGap="1.0" text="Service 1">
+            <content>
+              <AnchorPane fx:id="A1" focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="T1" layoutX="-2.0" prefHeight="287.0" prefWidth="564.0" rotateGraphic="true" stylesheets="@../../test.css" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="1.7976931348623157E100">
+                          <tabs>
+                            <Tab text="Lancer">
+                              <content>
+                                <AnchorPane fx:id="L1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@../../../../Users/demni/Desktop/test.css">
+                                       <children>
+                                          <Button fx:id="Blaunch" layoutX="343.0" layoutY="181.0" mnemonicParsing="false" onAction="#action" prefHeight="37.0" prefWidth="158.0" style="-fx-background-color: #00FF00;" text="       Lancement">
+                                             <font>
+                                                <Font name="System Bold Italic" size="15.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <ImageView disable="true" fitHeight="150.0" fitWidth="31.0" layoutX="353.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Users/demni/Desktop/Int_Exp/launcher-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="206.0" fitWidth="247.0" layoutX="27.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../Users/demni/Desktop/Int_Exp/images%20(4).jpg" />
+                                             </image>
+                                             <effect>
+                                                <DropShadow>
+                                                   <input>
+                                                      <InnerShadow />
+                                                   </input>
+                                                </DropShadow>
+                                             </effect>
+                                          </ImageView>
+                                          <Text fill="#4e4a80" layoutX="259.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Messagerie web-" textAlignment="CENTER" wrappingWidth="284.32421875">
+                                             <font>
+                                                <Font name="Century" size="32.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab style="-fx-fill-color: #FFFFFF;" text="Description">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../../../Users/demni/Desktop/test.css">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <children>
+                                          <Text fill="#2b1bd7" fontSmoothingType="LCD" layoutX="21.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Une messagerie web, webmail ou courriel web est une interface web rendant possible l’émission, la consultation et la manipulation de courriers électroniques directement sur le Web depuis un navigateur1." textAlignment="JUSTIFY" wrappingWidth="336.13671875">
+                                             <font>
+                                                <Font name="System Bold Italic" size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                           <effect>
+                              <DropShadow color="#2f42bc" height="27.674999999999997" radius="13.893749999999999" spread="0.15" width="29.9" />
+                           </effect>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font name="Aparajita Bold Italic" size="16.0" />
+               </font>
+          </TitledPane>
+          <TitledPane stylesheets="@../../test.css" text="Service 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="-1.0" layoutY="-1.0" prefHeight="286.0" prefWidth="564.0" rotateGraphic="true" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Lancer">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                            <Tab text="Description">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font name="Aparajita Bold Italic" size="16.0" />
+               </font>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
